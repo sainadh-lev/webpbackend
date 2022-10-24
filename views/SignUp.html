@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link href="styles.css" rel=“stylesheet” type=“text/css”/>
+    <style>
+      body {
+        background-color: #151e23;
+      }
+      .btn {
+        background-color: #6975de;
+        color: white;
+        border: none;
+        border-radius: 30px;
+        padding: 16px;
+        font-size: large;
+      }
+      .card {
+        background-color: rgb(102, 126, 234);
+        border-radius: 36px;
+      }
+      p {
+        color: white;
+      }
+      .fw-bold {
+        color: white;
+      }
+    </style>
+    <title>Register</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <div class="card my-5">
+            <form
+              class="card-body cardbody-color p-lg-5 needs-validation"
+              action="/register"
+              method="post"
+            >
+              <div class="text-center">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzETWP3F3D46pZ9ZS7tNkhq-j1lMhBRJyvSPHc7L51q8vCKHjaiw5aiQXIVWWkX44o4aw&usqp=CAU"
+                  class="img-fluid profile-image-pic img-thumbnail rounded-circle my-3"
+                  width="200px"
+                  alt="profile"
+                />
+              </div>
+
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="Username"
+                  aria-describedby="emailHelp"
+                  placeholder="User Name"
+                  name="username"
+                  required="required"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="Email"
+                  aria-describedby="emailHelp"
+                  placeholder="Email"
+                  name="email"
+                  required="required"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  placeholder="password"
+                  name="password"
+                  required="required"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  placeholder="confirmpassword"
+                  name="confirmpassword"
+                  required="required"
+                />
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary btn-lg">
+                  SignUp
+                </button>
+              </div>
+              <div id="emailHelp" class="form-text text-center mb-5 text-dark">
+                <p>Already have an acount?
+                <a href="/" class="text-white fw-bold"> Login </a></p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
